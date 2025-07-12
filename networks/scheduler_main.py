@@ -11,6 +11,8 @@ import h5py
 
 # this file trains both scheduler and precoder modules for simulating the scenes of different SNR and NRF
 
+# the difference between NGNN and SGNN lies in the Boolean variable ``is_sequential'': when it is False, the architecture is NGNN; when it is True, the architecture is SGNN.
+
 
 class GNN3D(nn.Module):
     def __init__(self, input_dim, hidden_dim, output_dim):
